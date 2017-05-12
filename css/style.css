@@ -1,0 +1,145 @@
+/*Common CSS*/
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:hover, a:focus {
+    text-decoration: none;
+    outline: 0 solid;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;   /* top:0, left-right:0; bottom:15px; */
+    font-weight: 300;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+section.section-padding {
+    padding: 100px 0;
+}
+
+
+.single-project-item {
+    background-color: #ccc;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.row.project-list .col-md-4:nth-child(2) .single-project-item, 
+.row.project-list .col-md-4:nth-child(4) .single-project-item, 
+.row.project-list .col-md-4:nth-child(5) .single-project-item {
+    height: 615px;
+} 
+
+.project-item-01 { background-image: url(../img/project-one.jpg);}
+.project-item-02 { background-image: url(../img/project-two.jpg);}
+.project-item-03 { background-image: url(../img/project-three.jpg);}
+.project-item-04 { background-image: url(../img/project-four.jpg);}
+.project-item-05 { background-image: url(../img/project-five.jpg);}
+.project-item-06 { background-image: url(../img/project-six.jpg);}
+.project-item-07 { background-image: url(../img/project-seven.jpg);}
+.project-item-08 { background-image: url(../img/project-eight.jpg);}
+.project-item-09 { background-image: url(../img/project-nine.jpg);}
+
+
+
+.project-title ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.project-title li {
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 20px;
+}
+.project-title {
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.row.project-list .col-md-4 {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+.row.project-list {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+
+.single-project-item a, .single-project-item span, .project-title li.active {
+    color: #01e9e3;
+}
+.project-hover {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 9;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.project-hover::after {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.single-project-item:hover .project-hover {
+    opacity: 1;
+}
+.project-hover a {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+.project-hover span {
+    display: block;
+    margin-top: 5px;
+    font-size: 80%;
+}
+.project-hover h4 {
+    color: #fff;
+    bottom: 25px;
+    left: 25px;
+    margin: 0;
+    position: absolute;
+}
+
+
+.project-hover i.fa {
+    font-size: 22px;
+}
+
+
