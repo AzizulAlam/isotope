@@ -4,7 +4,7 @@
    jQuery(document).ready(function($){
     
    // Code For Image Pop Up
-       $(".project-expan").magnificPopup({
+       $(".project-expand").magnificPopup({
             type: 'image',
             gallery: {
                 enabled: true,
