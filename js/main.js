@@ -3,10 +3,12 @@
     
    jQuery(document).ready(function($){
     
-//    $(".video-play-btn").magnificPopup({
-//       type:'video', 
-//    });
-    
+   // Code For Image Pop Up
+       $(".fa-expand").magnificPopup({
+            type: 'image',
+        });
+       
+  // Code For Isotope
         $(".project-title li").on('click', function(){
             
             $(".project-title li").removeClass("active");
@@ -17,9 +19,7 @@
                 filter: selector
             });
         });
-       
-       
-       
+              
    }); 
     
     jQuery(window).load(function(){
