@@ -4,8 +4,11 @@
    jQuery(document).ready(function($){
     
    // Code For Image Pop Up
-       $(".fa-expand").magnificPopup({
+       $(".project-expan").magnificPopup({
             type: 'image',
+            gallery: {
+                enabled: true,
+            },
         });
        
   // Code For Isotope
